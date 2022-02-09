@@ -1,5 +1,6 @@
 # my_goland_binds
 
+```
 <template name=":" value="$NAME$ := $VALUE$$END$" description="Variable declaration :=" toReformat="true" toShortenFQNames="true">
   <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
   <variable name="VALUE" expression="complete()" defaultValue="" alwaysStopAt="true" />
@@ -176,3 +177,4 @@
     <option name="GO" value="true" />
   </context>
 </template>
+```
