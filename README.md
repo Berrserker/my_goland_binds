@@ -57,7 +57,7 @@
   <variable name="VALUE" expression="goSuggestVariableName()" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
   <context />
 </template>
-<template name="func" value="func $NAME$($PARAMS$) ($TYPE_1$, $ERR_TYPE$) {&#10; $END$&#10; return $TYPE_1$, nil&#10;}" toReformat="false" toShortenFQNames="true">
+<template name="func" value="func $NAME$($PARAMS$) ($TYPE_1$, $ERR_TYPE$) {&#10; $END$&#10; return $TYPE_1$, nil&#10;}" description="" toReformat="false" toShortenFQNames="true">
   <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
   <variable name="PARAMS" expression="complete()" defaultValue="" alwaysStopAt="true" />
   <variable name="TYPE_1" expression="complete()" defaultValue="" alwaysStopAt="true" />
@@ -91,6 +91,11 @@
 </template>
 <template name="jsonc" value="'json:&quot;$FIELD_NAME$&quot;'$END$" description="json tag from field name" toReformat="false" toShortenFQNames="true">
   <variable name="FIELD_NAME" expression="camelCase(fieldName())&#9;" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="GO" value="true" />
+  </context>
+</template>
+<template name="lop" value="lorep ipsum" description="lorep ipsum" toReformat="false" toShortenFQNames="true">
   <context>
     <option name="GO" value="true" />
   </context>
